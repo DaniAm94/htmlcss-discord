@@ -38,11 +38,12 @@ body {
 
 .bg-black {
     color: white;
-    background-color: black;
+    background-color: hsl(205.71deg 9.09% 15.1%);
+}
 
-    .flex {
-        display: flex;
-    }
+.bg-blue {
+    color: white;
+    background-color: hsl(226.27deg 58.04% 71.96%);
 }
 
 .img-fit-container {
@@ -94,7 +95,7 @@ header {
     margin: 20px;
 }
 
-#logo {
+.logo {
     height: 100%;
     width: auto;
 }
@@ -203,8 +204,6 @@ h3 {
 }
 
 #button-ending-section {
-    color: white;
-    background-color: hsl(226.27deg 58.04% 71.96%);
     font-size: 24px;
     padding: 15px 30px;
 }
@@ -212,9 +211,7 @@ h3 {
 /* Footer */
 
 footer {
-    background-color: black;
-    height: 600px;
-    display: flex;
+    height: 740px;
 }
 
 .footer-container {
@@ -222,41 +219,84 @@ footer {
     margin: 0 auto;
     display: flex;
     flex-direction: column;
-    justify-content: space-between;
+    height: 100%;
+    padding-top: 70px;
 }
 
 .top-footer {
-    margin-top: 20px;
     width: var(--dispsize);
-    height: 400px;
+    flex-grow: 1;
     display: flex;
+    border-bottom: 1px solid hsl(226.73deg 58.43% 65.1%);
 }
 
 .top-left-footer {
     width: calc(var(--dispsize) / 3);
-    background-color: pink;
+    margin-right: 70px;
+}
+
+footer h3 {
+    color: hsl(226.73deg 58.43% 65.1%);
+    font-size: 30px;
+    font-weight: 900;
+}
+
+.language {
+    margin-bottom: 20px;
+}
+
+#ita-flag {
+    height: 16px;
+    width: auto;
+}
+
+.socials i {
+    font-size: 1.4rem;
+    margin-right: 20px;
 }
 
 .top-right-footer {
-    background-color: turquoise;
     width: calc(var(--dispsize) / 3 * 2);
-    display: flex;
 }
 
-.col-footer {
-    flex-grow: 1;
-    border: 1px dashed white;
+#table-footer {
+    width: 100%;
+    margin-top: 15px;
 }
+
+#table-footer thead {
+    height: 34px;
+}
+
+#table-footer th {
+    text-align: start;
+    vertical-align: top;
+    color: hsl(226.73deg 58.43% 65.1%);
+}
+
+#table-footer td {
+    vertical-align: top;
+    height: 34px;
+}
+
+#table-footer td:hover {
+    cursor: pointer;
+}
+
+
 
 .bottom-footer {
-    height: 100px;
-    background-color: springgreen;
+    flex-basis: 165px;
     display: flex;
     justify-content: space-between;
-    align-items: center;
+    margin-top: 30px;
 }
 
 .bottom-footer-item {
-    background-color: lightcoral;
+    height: 60px;
     padding: 10px 20px;
+}
+
+.button-register {
+    font-size: 1.2rem;
 }

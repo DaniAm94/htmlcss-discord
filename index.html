@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<!DOCTYPE html>
+<html lang="it">
 
 <head>
     <meta charset="UTF-8">
@@ -12,10 +12,12 @@
 </head>
 
 <body>
+
+    <!-- Header -->
     <header>
         <div class="header container">
             <div class="header-item side-header">
-                <img src="img/logo.svg" alt="logo discord" id="logo">
+                <img src="img/logo.svg" alt="logo discord" class="logo">
             </div>
             <nav class="header-item">
                 <a href="#">Scarica</a>
@@ -42,7 +44,7 @@
         </div>
     </div>
 
-
+    <!-- Main -->
     <main>
         <div class="primary-section">
             <div class="container">
@@ -80,6 +82,8 @@
                 </div>
             </div>
         </div>
+
+        <!-- Last main section -->
         <div class="primary-section">
             <div class="container">
                 <h2>Tecnologia affidabile per tenersi in contatto</h2>
@@ -89,28 +93,105 @@
                 <img src="img/item4-big.svg" alt="cams function" class="img-fit-container">
                 <div class="main-ending">
                     <h3>Pronto a iniziare la tua avventura?</h3>
-                    <button id="button-ending-section"><i class="fa-solid fa-down-long"></i> Scarica per Mac</button>
+                    <button id="button-ending-section" class="bg-blue">
+                        <i class="fa-solid fa-down-long"></i>
+                        Scarica per Mac
+                    </button>
                 </div>
             </div>
         </div>
     </main>
 
-    <footer>
+    <!-- Footer -->
+    <footer class="bg-black">
         <div class="footer-container">
+
+            <!-- Top footer -->
             <div class="top-footer">
-                <div class="top-left-footer"></div>
+                <div class="top-left-footer">
+                    <h3>Il tuo posto per parlare</h3>
+                    <div class="language">
+                        <img src="img/ita.png" alt="ita" id="ita-flag">
+                        Italiano
+                        <i class="fa-solid fa-chevron-down"></i>
+                    </div>
+                    <div class="socials">
+                        <a href="#"><i class="fa-brands fa-twitter"></i></a>
+                        <a href="#"><i class="fa-brands fa-instagram"></i></a>
+                        <a href="#"><i class="fa-brands fa-facebook"></i></a>
+                        <a href="#"><i class="fa-brands fa-youtube"></i></a>
+                    </div>
+                </div>
                 <div class="top-right-footer">
-                    <div class="col-footer"></div>
-                    <div class="col-footer"></div>
-                    <div class="col-footer"></div>
-                    <div class="col-footer"></div>
+                    <table id="table-footer">
+                        <thead>
+                            <th>Prodotto</th>
+                            <th>Compagnia</th>
+                            <th>Risorse</th>
+                            <th>Norme</th>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td><a href="#">Scarica</a></td>
+                                <td><a href="#">Chi siamo</a></td>
+                                <td><a href="#">Scarica</a></td>
+                                <td><a href="#">Scarica</a></td>
+                            </tr>
+                            <tr>
+                                <td><a href="#">Perchè Discord</a></td>
+                                <td><a href="#">Lavora con noi</a></td>
+                                <td><a href="#">Perchè Discord</a></td>
+                                <td><a href="#">Perchè Discord</a></td>
+                            </tr>
+                            <tr>
+                                <td><a href="#">Nitro</a></td>
+                                <td><a href="#">Marchio</a></td>
+                                <td><a href="#">Nitro</a></td>
+                                <td><a href="#">Nitro</a></td>
+                            </tr>
+                            <tr>
+                                <td><a href="#">Sicurezza</a></td>
+                                <td><a href="#">Redazione</a></td>
+                                <td><a href="#">Sicurezza</a></td>
+                                <td><a href="#">Sicurezza</a></td>
+                            </tr>
+                            <tr>
+                                <td rowspan="7"><a href="#">Assistenza</a></td>
+                                <td rowspan="7"><a href="#">Negozio</a></td>
+                                <td><a href="#">Assistenza</a></td>
+                                <td rowspan="7"><a href="#">Assistenza</a></td>
+                            </tr>
+                            <tr>
+                                <td>Scarica</td>
+                            </tr>
+                            <tr>
+                                <td>Perchè Discord</td>
+                            </tr>
+                            <tr>
+                                <td>Nitro</td>
+                            </tr>
+                            <tr>
+                                <td>Sicurezza</td>
+                            </tr>
+                            <tr>
+                                <td>Assistenza</td>
+                            </tr>
+                            <tr>
+                                <td>Assistenza</td>
+                            </tr>
+                        </tbody>
+                    </table>
                 </div>
             </div>
-            <hr>
 
+            <!-- Bottom footer -->
             <div class="bottom-footer">
-                <div class="bottom-footer-item">Logo</div>
-                <div class="bottom-footer-item">Bottone</div>
+                <div class="bottom-footer-item">
+                    <img src="img/logo.svg" alt="logo discord" class="logo">
+                </div>
+                <div class="bottom-footer-item">
+                    <button class="button-register bg-blue">Registrati</button>
+                </div>
             </div>
         </div>
     </footer>
