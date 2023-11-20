@@ -28,6 +28,10 @@ button {
     font-weight: 500;
 }
 
+button:hover {
+    cursor: pointer;
+}
+
 body {
     font-family: Whitney, 'Helvetica Neue', Helvetica, Arial, sans-serif;
 }
@@ -39,6 +43,17 @@ body {
     .flex {
         display: flex;
     }
+}
+
+.img-fit-container {
+    width: 100%;
+    height: auto;
+}
+
+i {
+    font-size: 1rem;
+    margin-right: 12px;
+
 }
 
 /* Header */
@@ -91,12 +106,12 @@ header button {
 /* Jumbotron */
 
 h1 {
-    font-size: 70px;
+    font-size: 60px;
     margin-bottom: 50px;
 }
 
 #jumbotron {
-    height: 690px;
+    height: 514px;
     background-image: url(../img/jumbo.png);
     background-size: cover;
     background-position: center;
@@ -110,31 +125,34 @@ h1 {
     color: white;
     height: 100%;
     flex-basis: 50%;
-    padding: 100px 0;
+    padding-top: 50px;
 }
 
 #jumbo-content>p {
-    font-size: 26px;
-    margin-bottom: 40px;
+    font-size: 22px;
+    margin-bottom: 20px;
 }
 
 #jumbo-content button {
-    font-size: 26px;
+    font-size: 22px;
     padding: 20px 40px;
     margin: 0 30px;
 }
 
-#jumbo-content>button>i {
-    margin-right: 20px;
-}
-
-
-
 /* MAIN */
 .primary-section {
-    height: 500px;
+    height: 880px;
     display: flex;
-    padding: 50px;
+    padding: 160px;
+}
+
+h2 {
+    font-size: 50px;
+    margin-bottom: 20px;
+}
+
+.primary-section p {
+    font-size: 24px;
 }
 
 .primary-section:nth-of-type(odd) {
@@ -142,16 +160,14 @@ h1 {
 }
 
 .primary-section:nth-of-type(even) {
-    background-color: lightgrey;
+    background-color: hsl(0deg 0% 96.47%);
 }
 
 .small-content {
-    background-color: pink;
     flex-basis: calc(var(--dispsize) * 0.4);
 }
 
 .large-content {
-    background-color: lightslategray;
     flex-basis: calc(var(--dispsize) * 0.6);
 }
 
@@ -162,11 +178,35 @@ h1 {
 }
 
 .primary-section:last-of-type {
-    height: 800px;
+    height: 1400px;
 }
 
 .primary-section:last-of-type>.container {
-    background-color: green;
+    display: block;
+}
+
+.main-ending {
+    margin: 0 auto;
+    padding: 42px 51px;
+    width: fit-content;
+    text-align: center;
+    background-image: url(../img/stars.svg);
+    background-size: contain;
+    background-position: top;
+    background-repeat: no-repeat;
+
+}
+
+h3 {
+    font-size: 30px;
+    margin-bottom: 40px;
+}
+
+#button-ending-section {
+    color: white;
+    background-color: hsl(226.27deg 58.04% 71.96%);
+    font-size: 24px;
+    padding: 15px 30px;
 }
 
 /* Footer */
