@@ -7,7 +7,7 @@
 
 /* CSS properties */
 :root {
-    --dispsize: 1080px;
+    --dispsize: 1200px;
 }
 
 /* Utils */
@@ -16,26 +16,49 @@
     margin: 0 auto;
 }
 
+a {
+    color: white;
+    text-decoration: none;
+}
+
+button {
+    border-radius: 50px;
+    padding: 10px 20px;
+    border: none;
+    font-weight: 500;
+}
+
+body {
+    font-family: Whitney, 'Helvetica Neue', Helvetica, Arial, sans-serif;
+}
+
+.bg-black {
+    color: white;
+    background-color: black;
+
+    .flex {
+        display: flex;
+    }
+}
+
 /* Header */
 
 header {
     display: flex;
     height: 100px;
-    background-color: aquamarine;
+    background-color: hsl(227.78deg 76.26% 57.06%);
     align-items: center;
 }
 
 .header.container {
     flex-basis: 100%;
     display: flex;
-    background-color: orange;
     height: 60%;
 }
 
 .header-item {
     display: flex;
     align-items: center;
-    border: 1px dashed black;
 }
 
 .side-header {
@@ -45,6 +68,7 @@ header {
 .header-item:not(.side-header) {
     flex-basis: calc(var(--dispsize) * 0.6);
     justify-content: center;
+    padding: 0 50px;
 }
 
 .side-header:last-of-type {
@@ -55,21 +79,56 @@ header {
     margin: 20px;
 }
 
+#logo {
+    height: 100%;
+    width: auto;
+}
+
+header button {
+    font-size: 1.2rem;
+}
+
 /* Jumbotron */
 
+h1 {
+    font-size: 70px;
+    margin-bottom: 50px;
+}
+
 #jumbotron {
-    height: 400px;
-    background-color: blue;
+    height: 690px;
+    background-image: url(../img/jumbo.png);
+    background-size: cover;
+    background-position: center;
     display: flex;
     justify-content: center;
     padding: 40px 0;
 }
 
 #jumbo-content {
-    background-color: palevioletred;
+    text-align: center;
+    color: white;
     height: 100%;
     flex-basis: 50%;
+    padding: 100px 0;
 }
+
+#jumbo-content>p {
+    font-size: 26px;
+    margin-bottom: 40px;
+}
+
+#jumbo-content button {
+    font-size: 26px;
+    padding: 20px 40px;
+    margin: 0 30px;
+}
+
+#jumbo-content>button>i {
+    margin-right: 20px;
+}
+
+
 
 /* MAIN */
 .primary-section {
