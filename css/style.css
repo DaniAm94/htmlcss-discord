@@ -1,0 +1,163 @@
+/* CSS Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* CSS properties */
+:root {
+    --dispsize: 1080px;
+}
+
+/* Utils */
+.container {
+    max-width: var(--dispsize);
+    margin: 0 auto;
+}
+
+/* Header */
+
+header {
+    display: flex;
+    height: 100px;
+    background-color: aquamarine;
+    align-items: center;
+}
+
+.header.container {
+    flex-basis: 100%;
+    display: flex;
+    background-color: orange;
+    height: 60%;
+}
+
+.header-item {
+    display: flex;
+    align-items: center;
+    border: 1px dashed black;
+}
+
+.side-header {
+    flex-basis: calc(var(--dispsize) * 0.2);
+}
+
+.header-item:not(.side-header) {
+    flex-basis: calc(var(--dispsize) * 0.6);
+    justify-content: center;
+}
+
+.side-header:last-of-type {
+    justify-content: flex-end;
+}
+
+.header-item>* {
+    margin: 20px;
+}
+
+/* Jumbotron */
+
+#jumbotron {
+    height: 400px;
+    background-color: blue;
+    display: flex;
+    justify-content: center;
+    padding: 40px 0;
+}
+
+#jumbo-content {
+    background-color: palevioletred;
+    height: 100%;
+    flex-basis: 50%;
+}
+
+/* MAIN */
+.primary-section {
+    height: 500px;
+    display: flex;
+    padding: 50px;
+}
+
+.primary-section:nth-of-type(odd) {
+    background-color: white;
+}
+
+.primary-section:nth-of-type(even) {
+    background-color: lightgrey;
+}
+
+.small-content {
+    background-color: pink;
+    flex-basis: calc(var(--dispsize) * 0.4);
+}
+
+.large-content {
+    background-color: lightslategray;
+    flex-basis: calc(var(--dispsize) * 0.6);
+}
+
+.primary-section>.container {
+    height: 100%;
+    display: flex;
+    width: var(--dispsize);
+}
+
+.primary-section:last-of-type {
+    height: 800px;
+}
+
+.primary-section:last-of-type>.container {
+    background-color: green;
+}
+
+/* Footer */
+
+footer {
+    background-color: black;
+    height: 600px;
+    display: flex;
+}
+
+.footer-container {
+    max-width: var(--dispsize);
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.top-footer {
+    margin-top: 20px;
+    width: var(--dispsize);
+    height: 400px;
+    display: flex;
+}
+
+.top-left-footer {
+    width: calc(var(--dispsize) / 3);
+    background-color: pink;
+}
+
+.top-right-footer {
+    background-color: turquoise;
+    width: calc(var(--dispsize) / 3 * 2);
+    display: flex;
+}
+
+.col-footer {
+    flex-grow: 1;
+    border: 1px dashed white;
+}
+
+.bottom-footer {
+    height: 100px;
+    background-color: springgreen;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.bottom-footer-item {
+    background-color: lightcoral;
+    padding: 10px 20px;
+}
